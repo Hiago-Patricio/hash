@@ -1,0 +1,56 @@
+.wrap_cells {
+    width: 306px;
+    height: 306px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 3px;
+    background-color: black;
+}
+
+.wrap_cells--click-disable {
+    pointer-events: none;
+}
+
+.cell {
+    background-color: aqua;
+}
+
+.cell--click-disable {
+    pointer-events: none;
+}
+
+.cell__o {
+    width: 100px;
+}
+
+.cell__x {
+    width: 132px;
+    transform: translate(-16px, -16px);
+}
+
+.game {
+    width: 306px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#reset {
+    background-color: brown;
+    height: 30px;
+    font-size: 24px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    height: 30px;
+    font-size: 24px;
+    display: block;
+    margin: 0;
+}
